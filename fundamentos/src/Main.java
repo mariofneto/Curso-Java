@@ -1,15 +1,18 @@
+import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        /*
         Locale.setDefault(Locale.US); // mudando a localização do programa
 
         double a = 10.568968;
         System.out.println(a);
         System.out.printf("%.2f%n", a); // printf() nesse exemplo vai formatar com duas casas decimais
         System.out.printf("%.4f%n", a);
-
+        */
         // varios elementos em um printf()
 
         //String nome = "Maria";
@@ -31,7 +34,7 @@ public class Main {
         Para calcular a área de um trapézio basta somar a base maior e base menor,
         multiplicar pela altura e depois, basta dividir o resultado por dois.
        */
-
+        /*
         double baseMenor = 6;
         double baseMaior = 8;
         double altura = 5;
@@ -39,10 +42,10 @@ public class Main {
         double area = (baseMenor+baseMaior) * altura / 2;
 
         System.out.printf("%.2f%n", area);
-
+        */
         // input de dados
 
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
         //char x = sc.next().charAt(0); // jeito de pegar um char no input
         //System.out.println("Você digitou: "+ x);
@@ -84,7 +87,7 @@ public class Main {
         */
 
         // ** funcoes matematicas **
-
+        /*
         double raiz = Math.sqrt(4);
         double potencia = Math.pow(4, 2);
         double valorAbs = Math.abs(-2.53);
@@ -95,8 +98,94 @@ public class Main {
         System.out.println("4 elevado a 2 potencia: "+ potencia);
         System.out.println("valor absoluto de -2.53: "+ valorAbs);
         System.out.println("valor arredondado de 2.53: "+ arredondado);
+        */
+
+        /*
+            EXEMPLO OPERADORA DE TELEFONIA
+         */
+
+        // cada minuto que exceder a franquia de 100 minutos custa R$ 2.00
+        Scanner sc = new Scanner(System.in);
+
+        /*
+            double plano = 50.00;
+            int tempoLimite = 100; // em minutos
 
 
+            System.out.print("Tempo gasto: ");
+            int tempoGasto = sc.nextInt();
 
+            int tempoExcedido = tempoGasto - tempoLimite; // calcula o quanto que passou do limite
+
+            if(tempoGasto < tempoLimite){
+                System.out.printf("Valor a pagar: R$ %.2f%n", plano);
+            }
+            else if(tempoGasto > tempoLimite){
+                double acrescimoPlano = plano + (tempoExcedido * 2);
+                System.out.printf("Valor a pagar: R$ %.2f%n", acrescimoPlano);
+            }
+        */
+
+        /*
+            EXEMPLO SWITCH CASE DIA DA SEMANA
+         */
+
+        /*
+        System.out.print("Digite 1 ao 7 para o dia da semana desejado: ");
+        int dia = sc.nextInt();
+
+        switch(dia){
+            case 1:
+                System.out.println("Domingo");
+                break;
+            case 2:
+                System.out.println("Segunda");
+                break;
+            case 3:
+                System.out.println("Terça");
+                break;
+            case 4:
+                System.out.println("Quarta");
+                break;
+            case 5:
+                System.out.println("Quinta");
+                break;
+            case 6:
+                System.out.println("Sexta");
+                break;
+            case 7:
+                System.out.println("Sábado");
+                break;
+            default:
+                System.out.println("Dia da Semana inválido");
+        }
+        //*/
+
+        /*
+            CONDICIONAL TERNÁRIA
+         */
+        /*
+        int a = 13;
+
+        String result = (a > 4) ? "a é maior que " + 4 : "a é menor que " + 4;
+
+        System.out.println(result);
+        */
+
+        /*
+            ESTRUTURA REPETITIVA WHILE
+         */
+
+        int num = sc.nextInt();
+        int soma = 0;
+        while(num != 0){
+            soma += num;
+            num = sc.nextInt();
+
+        }
+
+        System.out.println("A soma dos numeros é: " + soma);
+
+        sc.close();
     }
 }

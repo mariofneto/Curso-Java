@@ -58,15 +58,129 @@ public class Main {
             Considere o valor de π = 3.14159
          */
 
-        Scanner sc = new Scanner(System.in);
+        //Scanner sc = new Scanner(System.in);
 
-        final double pi = 3.14159;
+        //final double pi = 3.14159;
 
-        System.out.println("Valor do raio de um círculo: ");
-        double raioCirculo = sc.nextDouble();
-        double areaCirculo = pi * Math.pow(raioCirculo, 2);
+        //System.out.println("Valor do raio de um círculo: ");
+        //double raioCirculo = sc.nextDouble();
+        //double areaCirculo = pi * Math.pow(raioCirculo, 2);
 
-        System.out.printf("AREA = %.4f%n", areaCirculo);
+        //System.out.printf("AREA = %.4f%n", areaCirculo);
+
+        /*
+            EXERCICIO 03
+
+            Fazer um programa para ler quatro valores inteiros A, B, C e D.
+            A seguir, calcule e mostre a diferença do produto
+            de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
+        */
+        /*
+            Scanner sc = new Scanner(System.in);
+
+            int a, b, c, d;
+            System.out.print("A: ");
+            a = sc.nextInt();
+            System.out.print("B: ");
+            b = sc.nextInt();
+            System.out.print("C: ");
+            c = sc.nextInt();
+            System.out.print("D: ");
+            d = sc.nextInt();
+
+            int diferenca = (a * b - c * d);
+
+            System.out.println("DIFERENCA = "+ diferenca);
+        */
+
+        /*
+            EXERCICIO 04
+
+            Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas,
+            o valor que recebe por hora e calcula o salário desse funcionário. A seguir,
+            mostre o número e o salário do funcionário, com duas casas decimais
+
+        */
+
+        /*
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("NUMERO FUNCIONARIO: ");
+            int numFuncionario = sc.nextInt();
+            System.out.print("NUMERO DE HORAS: ");
+            int numHoras = sc.nextInt();
+            System.out.print("VALOR DAS HORAS: ");
+            double valorHora = sc.nextDouble();
+
+            double salario = numHoras * valorHora;
+
+            System.out.println("NUMBER = "+ numFuncionario);
+            System.out.printf("SALARY = U$ %.2f%n", salario);
+        */
+
+        /*
+            EXERCICIO 05
+
+            Fazer um programa para ler o código de uma peça 1, o número de peças 1,
+            o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2
+            e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago
+         */
+
+        /*
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("Código 1: ");
+            int cod1 = sc.nextInt();
+            System.out.print("Número de peças 1: ");
+            int numPecas1 = sc.nextInt();
+            System.out.print("Valor unitário de peças 1: ");
+            double valorPecas1 = sc.nextDouble();
+
+            System.out.print("Código 2: ");
+            int cod2 = sc.nextInt();
+            System.out.print("Número de peças 2: ");
+            int numPecas2 = sc.nextInt();
+            System.out.print("Valor unitário de peças 2: ");
+            double valorPecas2 = sc.nextDouble();
+
+            double valorPagar = numPecas1 * valorPecas1 + numPecas2 * valorPecas2;
+
+            System.out.printf("VALOR A PAGAR: R$ %.2f%n", valorPagar);
+        */
+
+        /*
+            EXERCICIO 06
+
+            Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C.
+            Em seguida, calcule e mostre:
+
+            a) a área do triângulo retângulo que tem A por base e C por altura.
+            b) a área do círculo de raio C. (pi = 3.14159)
+            c) a área do trapézio que tem A e B por bases e C por altura.
+            d) a área do quadrado que tem lado B.
+            e) a área do retângulo que tem lados A e B.
+         */
+
+        /*
+            final double pi = 3.14159;
+            Scanner sc = new Scanner(System.in);
+
+            System.out.print("A: ");
+            double a = sc.nextDouble();
+            System.out.print("B: ");
+            double b = sc.nextDouble();
+            System.out.print("C: ");
+            double c = sc.nextDouble();
+
+            double areaTrianguloRetangulo = a * c / 2;
+            double areaCirculo = pi * Math.pow(c, 2);
+            double areaTrapezio = (a + b) * c / 2;
+            double areaQuadrado = Math.pow(b, 2);
+            double areaRetangulo = a * b;
+
+            System.out.printf("TRIANGULO: %.3f%nCIRCULO: %.3f%nTRAPEZIO: %.3f%nQUADRADO: %.3f%nRETANGULO: %.3f%n",
+                    areaTrianguloRetangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo);
+        */
 
 
     }
