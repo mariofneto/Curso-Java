@@ -175,7 +175,7 @@ public class Main {
         /*
             ESTRUTURA REPETITIVA WHILE
          */
-
+        /*
         int num = sc.nextInt();
         int soma = 0;
         while(num != 0){
@@ -185,7 +185,67 @@ public class Main {
         }
 
         System.out.println("A soma dos numeros é: " + soma);
+        */
+
+         /*
+            ESTRUTURA REPETITIVA FOR
+         */
+        /*
+        int soma = 0;
+        int repetir = sc.nextInt();
+        int lerNum;
+
+        for(int c = 0; c < repetir; c++){
+            lerNum = sc.nextInt();
+            soma += lerNum;
+        }
+
+        System.out.println(soma);
+        */
+
+        /*
+            ex celsius para fahrenhheit usando do-while
+
+            formula: multiplica celsius por 1,8 e somar 32
+            caso digite "s", continue o programa
+         */
+        /*
+        char res = 's';
+        do {
+            System.out.print("Digite a temperatura em Celsius: ");
+            double celsius = sc.nextDouble();
+            double fahrenheit = celsius * 1.8 + 32;
+            System.out.printf("Equivalente em Fahrenheit: %.1f%n", fahrenheit);
+            System.out.print("Deseja repetir (s/n)?");
+            res = sc.next().charAt(0);
+        } while(res != 'n');
+        */
+
+        System.out.println("Enter three numbers:");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int maior = max(num1, num2, num3);
+
+        showResult(maior);
 
         sc.close();
     }
+
+    public static int max(int a, int b, int c){
+        int max = a;
+        if(b > a && b > c) {
+            max = b;
+        }
+        else if(c > b && c > a){
+            max = c;
+        }
+        return max;
+    }
+
+    public static void showResult(int m){
+        System.out.println("O maior número é: " + m);
+    }
+
+
 }
