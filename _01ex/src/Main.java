@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -126,9 +127,9 @@ public class Main {
             e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago
          */
 
-        /*
-            Scanner sc = new Scanner(System.in);
 
+            Scanner sc = new Scanner(System.in);
+        /*
             System.out.print("Código 1: ");
             int cod1 = sc.nextInt();
             System.out.print("Número de peças 1: ");
@@ -181,6 +182,64 @@ public class Main {
             System.out.printf("TRIANGULO: %.3f%nCIRCULO: %.3f%nTRAPEZIO: %.3f%nQUADRADO: %.3f%nRETANGULO: %.3f%n",
                     areaTrianguloRetangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo);
         */
+
+
+        /*
+            ex 01 oop (file:///C:/Users/marii/Downloads/03-classes-atributos-membros-staticos.pdf)
+         */
+
+        /*
+        Rectangle retan = new Rectangle();
+
+        System.out.println("Enter rectangle width and height:");
+        retan.Width = sc.nextDouble();
+        retan.Height = sc.nextDouble();
+
+        System.out.println("AREA = "+ String.format("%.2f", retan.Area()));
+        System.out.println("PERIMETER = "+ String.format("%.2f", retan.Perimeter()));
+        System.out.println("DIAGONAL = "+ String.format("%.2f", retan.Diagonal()));
+
+        */
+
+        /*
+         ex 02
+         */
+        /*
+        Employee func = new Employee();
+
+        System.out.print("Name: ");
+        func.name = sc.nextLine();
+        System.out.print("Groos salary: ");
+        func.grossSalary = sc.nextDouble();
+        System.out.print("Tax: ");
+        func.tax = sc.nextDouble();
+
+        System.out.printf("Employee: %s, $ %.2f%n", func.name, func.netSalary());
+
+        System.out.print("Which percentage to increase salary? ");
+        func.incraseSalary(sc.nextDouble());
+
+        System.out.printf("Updated data: %s, $ %.2f%n", func.name, func.netSalary());
+        */
+
+        /*
+        ex 03
+         */
+        /*
+        Student student = new Student();
+
+        student.name = sc.nextLine();
+        student.gradeA = sc.nextDouble();
+        student.gradeB = sc.nextDouble();
+        student.gradeC = sc.nextDouble();
+
+        student.finalGrade();
+        */
+
+
+
+
+
 
 
     }

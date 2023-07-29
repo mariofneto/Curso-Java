@@ -6,53 +6,56 @@ public class oop {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         /*
-        // p = (a+b+c)/2
-        System.out.println("Enter the measures of triangle X:");
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
-        System.out.println("Enter the measures of triangle Y:");
-        double d = sc.nextDouble();
-        double e = sc.nextDouble();
-        double f = sc.nextDouble();
+        // exemplo com o Triangle
 
-        double p = (a+b+c) / 2;
-        double areaX = Math.sqrt(p * (p - a) * (p - b) * (p -c));
-        p = (d+e+f) / 2;
-        double areaY = Math.sqrt(p * (p - a) * (p - b) * (p -c));
+            Triangle x, y;
 
-        System.out.printf("Triangle X area: %.4f%n", areaX);
-        System.out.printf("Triangle Y area: %.4f%n", areaY);
+            System.out.println("Enter the measures of triangle X:");
+            double a = sc.nextDouble();
+            double b = sc.nextDouble();
+            double c = sc.nextDouble();
 
-        if(areaX > areaY){
-            System.out.println("Larger area: X");
-        }
-        else if(areaX < areaY){
-            System.out.println("Larger area: Y");
-        }
-        else{
-            System.out.println("Areas equals");
-        }
+            System.out.println("Enter the measures of triangle Y:");
+            double d = sc.nextDouble();
+            double e = sc.nextDouble();
+            double f = sc.nextDouble();
 
-         */
-        Triangle x, y;
+            x = new Triangle(a, b, c);
+            y = new Triangle(d, e, f);
 
-        System.out.println("Enter the measures of triangle X:");
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
+            x.exibirArea();
+            y.exibirArea();
+        */
 
-        System.out.println("Enter the measures of triangle Y:");
-        double d = sc.nextDouble();
-        double e = sc.nextDouble();
-        double f = sc.nextDouble();
+        // products
 
-        x = new Triangle(a, b, c);
-        y = new Triangle(d, e, f);
+        Product pd = new Product();
+        System.out.println("Enter product data:");
+        System.out.print("Name: ");
+        pd.name = sc.nextLine();
+        System.out.print("Price: ");
+        pd.price = sc.nextDouble();
+        System.out.print("Quantity in stock: ");
+        pd.quantity = sc.nextInt();
+        System.out.println(" ");
 
-        x.exibirArea();
-        y.exibirArea();
-        
+        double quantityValueStock = pd.TotalValueInStock();
+
+        System.out.println("Product Data: "+  pd.toString());
+
+        System.out.print("Enter the number of products to be added in stock: ");
+        int addNumberProducts = sc.nextInt();
+        pd.addProducts(addNumberProducts);
+        System.out.println("Updated Data: "+ pd.toString());
+
+        System.out.print("Enter the number of products to be remove from stock: ");
+        int removeNumberProducts = sc.nextInt();
+        pd.removeProducts(removeNumberProducts);
+        System.out.println("Updated Data: "+ pd.toString());
+
+        sc.close();
+
+
 
 
     }
