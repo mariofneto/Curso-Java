@@ -29,15 +29,17 @@ public class oop {
 
         // products
 
-        Product pd = new Product();
+
         System.out.println("Enter product data:");
         System.out.print("Name: ");
-        pd.name = sc.nextLine();
+        String name = sc.nextLine();
         System.out.print("Price: ");
-        pd.price = sc.nextDouble();
+        double price = sc.nextDouble();
         System.out.print("Quantity in stock: ");
-        pd.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
         System.out.println(" ");
+
+        Product pd = new Product(name, price, quantity);
 
         double quantityValueStock = pd.TotalValueInStock();
 

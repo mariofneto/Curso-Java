@@ -236,6 +236,17 @@ public class Main {
         student.finalGrade();
         */
 
+        // ex currencyConverter
+        /*
+        System.out.print("What is the dollar price? ");
+        double dolarPrice = sc.nextDouble();
+        System.out.print("How many dollars will be bought? ");
+        double amount = sc.nextDouble();
+
+        double result = CurrencyConverter.dolarToReal(amount, dolarPrice);
+
+        System.out.printf("Amount to be paid in reais = %.2f%n", result);
+        */
 
 
 
