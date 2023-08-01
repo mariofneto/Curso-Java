@@ -1,5 +1,6 @@
 import java.sql.SQLOutput;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -248,10 +249,43 @@ public class Main {
         System.out.printf("Amount to be paid in reais = %.2f%n", result);
         */
 
+        // ex do BankAccount
+        BankAccount bank;
 
+        System.out.print("Enter account number: ");
+        int numAccount = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter account holder: ");
+        String name = sc.nextLine();
+        System.out.print("Is there na initial deposit (y/n)?");
+        char res = sc.nextLine().charAt(0);
 
+        if(res == 'y'){
+            System.out.print("Enter initial deposit value: ");
+            double deposit = sc.nextDouble();
 
+            bank = new BankAccount(numAccount, name, deposit);
+        }
+        else {
+
+            bank = new BankAccount(numAccount, name);
+        }
+
+        System.out.println(" ");
+        System.out.println("Account data:");
+        System.out.println(bank);
+        System.out.println(" ");
+        System.out.print("Enter a deposit value: ");
+        bank.deposit(sc.nextDouble());
+        System.out.println("Updated account data:");
+        System.out.println(bank);
+        System.out.println(" ");
+        System.out.print("Enter a withdraw value: ");
+        bank.withdraw(sc.nextDouble());
+        System.out.println("Updated account data:");
+        System.out.println(bank);
 
 
     }
+
 }
