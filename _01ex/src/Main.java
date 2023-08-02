@@ -250,7 +250,7 @@ public class Main {
         */
 
         // ex do BankAccount
-        BankAccount bank;
+        /*BankAccount bank;
 
         System.out.print("Enter account number: ");
         int numAccount = sc.nextInt();
@@ -284,6 +284,67 @@ public class Main {
         bank.withdraw(sc.nextDouble());
         System.out.println("Updated account data:");
         System.out.println(bank);
+        */
+
+        // ex array
+        /*
+        System.out.print("Escreva um número para ser utilizado repetidamente: ");
+        int resposta = sc.nextInt();
+        double [] alturas = new double[resposta];
+        double soma = 0;
+
+        for(int c = 0; c < resposta; c++){
+            System.out.print("Escreva a altura da pessoa "+ (c + 1) + ": ");
+            alturas[c] = sc.nextDouble();
+        }
+
+        for(int c = 0; c < alturas.length; c++){
+            soma += alturas[c];
+        }
+
+        double media = soma / alturas.length;
+
+        System.out.printf("A média das alturas é igual a %.2f%n", media);
+
+        sc.close();
+        */
+
+        // ex array com obj
+
+        Product prod;
+
+        System.out.print("Escreva um número para ser utilizado repetidamente: ");
+        int resposta = sc.nextInt();
+        sc.nextLine();
+
+        Product [] arrProducts = new Product[resposta];
+
+        for(int c = 0; c < arrProducts.length; c++){
+            System.out.print("Escreva o nome do produto: ");
+            String nomeProduto = sc.nextLine();
+            System.out.print("Escreva o preço do produto: ");
+            double precoProduto = sc.nextDouble();
+            sc.nextLine();
+            prod = new Product(nomeProduto, precoProduto);
+            arrProducts[c] = prod;
+        }
+
+        double soma = 0.00;
+        for(int c = 0; c < resposta; c++){
+            soma+=arrProducts[c].price;
+        }
+
+        double avg = soma / resposta;
+
+        System.out.printf("Preço médio dos produtos: %.2f%n", avg);
+
+        sc.close();
+
+
+
+
+
+
 
 
     }
