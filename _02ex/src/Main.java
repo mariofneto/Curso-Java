@@ -209,6 +209,7 @@ public class Main {
         os elementos do vetor que estejam abaixo da média, com uma casa decimal cada.
          */
 
+        /*
         System.out.print("Quantos elementos vai ter o vetor? ");
         int resposta = sc.nextInt();
 
@@ -221,6 +222,7 @@ public class Main {
             vetor[c] = sc.nextDouble();
             soma += vetor[c];
         }
+         */
 
 
 
