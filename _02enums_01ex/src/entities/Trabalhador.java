@@ -53,8 +53,12 @@ public class Trabalhador {
         contratos.remove(contrato);
     }
 
-    public Double aumento(Integer ano, Integer mes){
-        return this.salarioBase;
+    public Double aumento(Double aumento){
+        Double soma = salarioBase;
+
+        soma+=aumento;
+
+        return soma;
     }
 
 
