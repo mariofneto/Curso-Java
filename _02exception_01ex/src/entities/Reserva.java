@@ -52,7 +52,7 @@ public class Reserva {
         return TimeUnit.DAYS.convert(duracao, TimeUnit.MILLISECONDS);
     }
 
-    public void atualizarDatas(Date entrada, Date saida){
+    public String atualizarDatas(Date entrada, Date saida){
         this.dataEntrada = entrada;
         this.dataSaida = saida;
 
